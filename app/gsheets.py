@@ -1,6 +1,5 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-from app import app
 
 class Gsheets:
     def __init__(self, secret_path):

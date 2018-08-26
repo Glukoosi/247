@@ -21,7 +21,9 @@ def index():
 
                     ]
 
-        gsheets = Gsheets("secret.json")
-        gsheets.uploadtosheet("otit247", form_data)
+        gsheets = Gsheets(config['SECRET_PATH'])
+        gsheets.uploadtosheet(config['SHEET_PATH'], form_data)
+
+        flash('Hakemus on lähetetty / Your request has been sent')
 
     return render_template('index.html', form=form)
