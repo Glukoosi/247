@@ -2,7 +2,7 @@
 Flask app for requesting access to OTiT guild room.
 Submitted form will go straight to Google Sheets.
 
-Service account key is needed from Google.
+Service account key and reCAPTCHA keys is needed from Google.
 ```
 
 
