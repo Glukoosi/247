@@ -14,13 +14,10 @@ or
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
+flask run
 
 
 for prod:
 docker-compose -f docker-compose_prod.yml up -d
 ```
 
-
-```
-flask run
-```
