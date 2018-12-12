@@ -1,5 +1,6 @@
 *.pyc
 env/
+dev.env
 *.swp
 *.db
 migrations/
