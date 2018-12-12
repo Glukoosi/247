@@ -4,7 +4,7 @@ services:
     restart: always
     build: .
     env_file:
-      - dev.env
+      - prod.env
     ports:
      - "5000:5000"
     volumes:
