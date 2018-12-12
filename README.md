@@ -7,9 +7,17 @@ Service account key and reCAPTCHA keys is needed from Google.
 
 
 ```
+docker-compose up
+
+or
+
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
+
+
+for prod:
+docker-compose -f docker-compose_prod.yml up -d
 ```
 
 
