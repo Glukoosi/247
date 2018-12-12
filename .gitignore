@@ -1,6 +1,7 @@
 *.pyc
 env/
 dev.env
+prod.env
 *.swp
 *.db
 migrations/

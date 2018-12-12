@@ -1,6 +1,7 @@
 version: '3'
 services:
   flask:
+    restart: always
     build: .
     env_file:
       - dev.env
@@ -8,4 +9,4 @@ services:
      - "5000:5000"
     volumes:
      - .:/app
-    command: app.py
+    command: gunicorn -w 4 -b 0.0.0.0:5000 app:app
